@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --blue:#81ccf1;
+  --yellow:#efc66a;
+  --pink:#f373af;
+  --dark-pink:#c59ece;
+  --purple:#9996cb;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.container{
+  background-image: linear-gradient(to top, var(--purple), #ab99cc, #bb9dcd, #caa1cc, #d8a8cb);
+  width: 57%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);
+}
+
+.container-1 {
+  grid-row-start:5;
+  grid-row-end:7;
+  grid-column-start:1;
+  grid-column-end:2;
+  width: 100%;
+  height: auto;
+  background-color: var(--yellow);
+}
+
+.container-2 {
+  grid-row-start:7;
+  grid-row-end:9;
+  grid-column-start:1;
+  grid-column-end:4;
+  width: 100%;
+  height: auto;
+  background-color: var(--blue);
+}
+
+.container-3 {
+  grid-row-start:9;
+  grid-row-end:10;
+  grid-column-start:1;
+  grid-column-end:2;
+  width: 100%;
+  height: auto;
+  background-color: var(--yellow);
+}
+
+.container-4 {
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:3;
+  grid-column-end:4;
+  width: 100%;
+  height: auto;
+  background-color: var(--pink);
+  display: grid;
+  align-items: end;
+  justify-content: end;
+}
+
+.container-4 p {
+  position: relative;
+  height: 120%;
+  font-weight: bold;
+  font-size: 20px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  bottom: 50px;
+}
+
+.container-5 {
+  grid-row-start:6;
+  grid-row-end:11;
+  grid-column-start:5;
+  grid-column-end:8;
+  width: 100%;
+  height: auto;
+  background-color: var(--pink);
+}
+
+.container-6 {
+  grid-row-start:5;
+  grid-row-end:8;
+  grid-column-start:6;
+  grid-column-end:9;
+  width: 100%;
+  height: auto;
+  border: var(--pink) solid 5px;
+}
+
+.container-7 {
+  grid-row-start:3;
+  grid-row-end:10;
+  grid-column-start:7;
+  grid-column-end:10;
+  width: 100%;
+  height: auto;
+  border: var(--pink) solid 5px;
+}
+
+.container-7 p{
+  width: 130%;
+  font-weight: bold;
+  font-size: 90px;
+  position: relative;
+  top: 40px;
+  left: -120px;
+}
